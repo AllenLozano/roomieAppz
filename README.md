@@ -6,8 +6,8 @@ Time spent: **20** hours spent in total
 
 ## Required Stories
 - [X] Sign Up/Log in
-- [ ] Home page
-- [ ] Settings page: add and remove chores
+- [X] Home page
+- [X] Settings page: add and remove chores
 - [X] Persisting user
 
 ## Stretch Stories
