@@ -6,29 +6,14 @@
 //  Copyright © 2018 Kenia Rioja. All rights reserved.
 //
 
-/*
- Allen, for the chores, we might consider making them PFObjects that we can associate with
- the current user as guided by
- https://guides.codepath.com/ios/Building-Data-driven-Apps-with-Parse#fetching-data-from-parse-via-pfquery
- and we can just model our app video to show us adding a chore to an existing list of chores we
- can fetch from Parse and then logging out
- We can just describe all the other details. Let me know if you have any thoughts or questions via text.
- The log in I made to test the app is
- jsmith@gmail.com
- password
- -Kenia
- */
-
 import UIKit
 import Parse
 
 class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     var chores: [Chore] = []
-    //var choreString: String!
     @IBOutlet var choresTableView: UITableView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,7 +43,6 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
             print("Current user is already nil")
         }
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chores.count
     }
@@ -79,8 +63,6 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         let query = Chore.query()
         query?.includeKey("name")
         query?.includeKey("choreString")
-        //query?.includeKey("createdAt")
-        //query?.includeKey("caption")
         query?.limit = 20
         
         // Fetch data asynchronously

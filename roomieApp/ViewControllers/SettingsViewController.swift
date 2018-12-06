@@ -13,8 +13,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var choreTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
     }
     
     @IBAction func createChore(_ sender: Any) {

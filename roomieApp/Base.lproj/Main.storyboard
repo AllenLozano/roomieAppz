@@ -285,11 +285,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoM-Gm-zUj">
-                                <rect key="frame" x="45" y="383" width="91" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CheckBoxPic"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1MD-Pk-JIt">
                                 <rect key="frame" x="149" y="190" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -344,6 +339,11 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="logInSegue" id="5Lx-1w-n2Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoM-Gm-zUj">
+                                <rect key="frame" x="99" y="383" width="33" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CheckBoxPic" image="checkBox-1"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gcc-wS-Q4B"/>
@@ -382,8 +382,11 @@
             <point key="canvasLocation" x="772" y="124.58770614692655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkBox-1" width="128" height="128"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eQ9-YC-NAw"/>
-        <segue reference="Sbl-dM-M8y"/>
+        <segue reference="cns-Lx-52U"/>
+        <segue reference="5Lx-1w-n2Q"/>
     </inferredMetricsTieBreakers>
 </document>
