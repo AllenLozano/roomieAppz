@@ -11,7 +11,7 @@ import Parse
 
 class Chore: PFObject,PFSubclassing {
     
-    @NSManaged var name: PFUser
+    @NSManaged var name: String
     @NSManaged var choreString: String
     @NSManaged var firstName: String
     @NSManaged var frequency: String
@@ -20,11 +20,11 @@ class Chore: PFObject,PFSubclassing {
         return "Chore"
     }
     
-    class func choresDifferent(withChore chorez: String?, withCompletion completion: PFBooleanResultBlock?) {
+    class func choresDifferent(withChore chorez: String?, withName name: String?, withCompletion completion: PFBooleanResultBlock?) {
         
         let chore = Chore()
         
-        chore.name = PFUser.current()!
+        chore.name = name!
         chore.choreString = chorez!
         chore.frequency = "1/week"
         

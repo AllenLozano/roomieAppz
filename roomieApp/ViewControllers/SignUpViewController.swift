@@ -38,6 +38,7 @@ class SignUpViewController: UIViewController {
         newUser.username = emailTextField.text
         newUser.password = passwordTextField.text
         
+        
         newUser.signUpInBackground { (success: Bool, error: Error?) in
             if success {
                 print("Yeay created new user!")

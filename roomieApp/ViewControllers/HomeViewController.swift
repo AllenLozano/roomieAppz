@@ -52,7 +52,7 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         let chore = chores[indexPath.row]
         cell.indexPath = indexPath
         
-        cell.nameLabel.text = PFUser.current()?.username
+        cell.nameLabel.text = chore.name
         cell.choreLabel.text = chore.choreString
         
         return cell

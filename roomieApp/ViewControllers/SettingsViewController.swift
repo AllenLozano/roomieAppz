@@ -11,6 +11,8 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var choreTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,8 +20,9 @@ class SettingsViewController: UIViewController {
     @IBAction func createChore(_ sender: Any) {
         
         let chorez = choreTextField.text ?? ""
-       
-        Chore.choresDifferent(withChore: chorez) { (success, error) in
+        let name = nameTextField.text ?? ""
+        
+        Chore.choresDifferent(withChore: chorez, withName: name) { (success, error) in
             if (error != nil) {
                 print(error.debugDescription)
             }
